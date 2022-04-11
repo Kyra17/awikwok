@@ -1,0 +1,302 @@
+* {
+   box-sizing: border-box;
+   /*background-image: url('image.jpg');*/
+   color: white;
+   font-family: arial;
+}
+
+.fotop {
+   object-fit: cover;
+   width: 100px;
+   height: 125px;
+}
+
+/*Login*/
+
+body {
+   /*padding: 0;
+   margin: 0;*/
+}
+
+h2 {
+   background: transparent;
+   font-size: 30px;
+   color: white;
+}
+
+.background {
+   /*filter: brightness(25%);*/
+   background-image: url('image.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: darken;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+}
+
+.login {
+   width: 500px;
+   height: 350px;
+   position: absolute;
+   margin: auto;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   background: transparent;
+   /*display: inline-block;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 500px;
+   height: 500px;
+   margin:  auto;
+   background: transparent;*/
+}
+
+
+form
+{
+   /*display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   /*border: 2px solid black;*/
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0px;
+   display: inline-block;
+   flex-direction: column;
+   width: 85%;
+   background: transparent;
+}
+
+.btn_login {
+   width: 350px;
+   height: 65px;
+   margin: 10px auto;
+   background: #4FB2AA;
+   border-radius: 50px;
+   border: transparent;
+   font-size: 20px;
+   cursor: pointer;
+   color: white;
+   transition-duration: 0.4s;
+}
+
+.btn_login:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.input_login {
+   /*width:  350px;
+   height: 50px;
+   background: transparent;
+   background-repeat: no-repeat;
+   border: 2px solid black;
+   border-radius: 50px;
+   cursor: pointer;
+   overflow: hidden;
+   outline: none;*/
+   /* Rectangle 5 */
+   width: 350px;
+   height: 65px;
+   margin: 5px auto;
+   background: rgba(196, 196, 196, 0.25);
+   border-radius: 50px;
+   outline: none;
+   border: transparent;
+   background-repeat: no-repeat;
+   font-size: 20px;
+   padding: 25px;
+   color: #FFFFFF;
+   overflow: hidden;
+}
+
+/*DashBoard*/
+
+.dbimage {
+   object-fit: cover;
+   filter: brightness(100%);
+   /*display: inline-block;*/
+   width: 100px;
+   height: 125px;
+   background-image: url("foto.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   margin-left: 125px;
+   margin-top: 50px;
+   border: 2px solid white;
+}
+
+.nav {
+   margin-top: 50px;
+   margin-left: 25px;
+   padding-top: 2px;
+}
+
+.navgroup {
+   padding-top: 2px;
+}
+
+a {
+   color: white;
+   text-decoration: none;
+}
+
+a:hover {
+   color: lightgreen;
+}
+
+.txt {
+   width: 750px;
+   height: 200px;
+   background: transparent;
+   margin-left: 25px;
+   margin-top: 10px;
+   border: 2px solid white;
+   border-radius: 50px;
+   padding-left: 50px;
+   padding-top: 15px;
+}
+
+.btn_isi {
+   width: 100px;
+   height: 25px;
+   margin-left: 675px;
+   margin-top: 15px;
+   background: #4FB2AA;
+   border-radius: 50px;
+   border: transparent;
+   /*font-size: 20px;*/
+   cursor: pointer;
+   color: white;
+   transition-duration: 0.4s;
+}
+
+.btn_isi:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+/*Form Catatan*/
+
+.form_main{
+   background-image: url("image.jpg");
+   background-repeat: no-repeat;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+}
+
+.form_isi {
+   display: block;
+}
+
+.input_isi {
+   display: block;
+   width: 350px;
+   height: 25px;
+   margin-left: 75px;
+   margin-top: 10px;
+   background: rgba(196, 196, 196, 0.25);
+   border-radius: 50px;
+   outline: none;
+   border: transparent;
+   background-repeat: no-repeat;
+   padding-left: 15px;
+   font-size: 12px;
+}
+
+.td_isi {
+   display: block;
+   width: 200px;
+   height: 25px;
+   margin-top: 10px;
+}
+
+.txt_catatan {
+   width: 750px;
+   height: 225px;
+   background: transparent;
+   margin-left: 25px;
+   margin-top: 10px;
+   border: 2px solid white;
+   border-radius: 50px;
+   padding-left: 50px;
+   padding-top: 15px;
+
+}
+
+.btn_catatan {
+   width: 100px;
+   height: 25px;
+   margin-left: 325px;
+   margin-top: 10px;
+   background: #4FB2AA;
+   border-radius: 50px;
+   border: transparent;
+   /*font-size: 20px;*/
+   cursor: pointer;
+   color: white;
+   transition-duration: 0.4s;
+}
+
+.btn_catatan:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Data Catatan */
+
+.data {
+   width: 750px;
+   height: 50px;
+   background: transparent;
+   margin-left: 25px;
+   margin-top: 10px;
+   border: 2px solid white;
+   border-radius: 50px;
+   padding-left: 50px;
+   padding-top: 15px;
+}
+
+.data_catatan {
+   width: 650px;
+   border-collapse:separate;
+   border:solid white 2px;
+   border-radius: 50px;
+   border-spacing: 10px;
+}
+
+table {
+   border: 3px;
+}
+
+.txt_data {
+   width: 750px;
+   height: 225px;
+   background: transparent;
+   margin-left: 25px;
+   margin-top: 10px;
+   border: 2px solid white;
+   border-radius: 50px;
+   padding-left: 50px;
+   padding-top: 15px;
+   text-align: center;
+}

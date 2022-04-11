@@ -40,4 +40,9 @@ class AuthController extends Controller
 
     return back()->with('loginError', 'NIK atau Nama yang anda gunakan tidak terdaftar');
     }
+
+    public function logout (Request $request){
+        Auth::logout();
+        return redirect('/');
+    }
 }

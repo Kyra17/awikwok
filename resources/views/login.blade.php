@@ -1,57 +1,65 @@
-@extends('layout')
-  
-@section('content')
-<main class="login-form">
-  <div class="cotainer">
-      <div class="row justify-content-center">
-          <div class="col-md-8">
-              <div class="card">
-                  <div class="card-header">Login</div>
-                  <div class="card-body">
-  
-                      <form action="{{ route('postlogin') }}" method="POST">
-                          @csrf
-                          <div class="form-group row">
-                              <label for="nik" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
-                              <div class="col-md-6">
-                                  <input type="text" id="nik" class="form-control" name="nik" required autofocus>
-                                  @if ($errors->has('nik'))
-                                      <span class="text-danger">{{ $errors->first('nik') }}</span>
-                                  @endif
-                              </div>
-                          </div>
-  
-                          <div class="form-group row">
-                              <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                              <div class="col-md-6">
-                                  <input type="password" id="password" class="form-control" name="password" required>
-                                  @if ($errors->has('password'))
-                                      <span class="text-danger">{{ $errors->first('password') }}</span>
-                                  @endif
-                              </div>
-                          </div>
-  
-                          <div class="form-group row">
-                              <div class="col-md-6 offset-md-4">
-                                  <div class="checkbox">
-                                      <label>
-                                          <input type="checkbox" name="remember"> Remember Me
-                                      </label>
-                                  </div>
-                              </div>
-                          </div>
-  
-                          <div class="col-md-6 offset-md-4">
-                              <button type="submit" class="btn btn-primary">
-                                  Login
-                              </button>
-                          </div>
-                      </form>
-                        
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</main>
-@endsection
+<!DOCTYPE html>
+<html>
+<head>	    
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TraveLog</title>
+</head>
+<body>
+	<section>
+		<!--- Background --->
+		<div class="background"></div>
+
+		<!--- Form --->
+		<div class="login">
+			<h2>TraveLog</h2>
+            @if(session()->has('loginError'))
+				<div class="alert alert-warning alert-dismissible fade show" role="alert">
+					{{session('loginError')}}
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+			@endif
+			<form action="{{ route('postlogin') }}" method="post">
+                @csrf
+				<input type="text" name="nik" class="from" placeholder="NIK" required>
+				<input type="text" name="nama" class="from" placeholder="Nama" required>
+				<button class="btn_login" type="submit">Log In</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>	    
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TraveLog</title>
+</head>
+<body>
+	<section>
+		<!--- Background --->
+		<div class="background"></div>
+
+		<!--- Form --->
+		<div class="login">
+			<h2>TraveLog</h2>
+			@if(session()->has('loginError'))
+				<div class="alert alert-warning alert-dismissible fade show" role="alert">
+					{{session('loginError')}}
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+			@endif
+			<form action="{{ route('postlogin') }}" method="post">
+			@csrf
+				<input type="text" name="nik" class="input_login" placeholder="NIK" required>
+				<input type="text" name="nama" class="input_login" placeholder="Nama" required>
+				<button class="btn_login">Log In</button>
+			</form>
+		</div>
+	</section>
+</body>
+</html>
